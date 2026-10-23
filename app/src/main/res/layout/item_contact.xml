@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/contact_card_background">
+
+    <TextView
+        android:id="@+id/tvContactInitial"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:background="@drawable/contact_avatar_background"
+        android:textColor="#6341A5"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:textColor="#29213E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@android:drawable/arrow_down_float"
+        android:rotation="-90"
+        android:contentDescription="Contact item" />
+
+</LinearLayout>
